@@ -350,38 +350,6 @@ echo "____________________________________________________" >> $REPORT
 
 
 
-# 1.22 - Verificando se o nchecklist está configurado na cron
-
-
-
-printf "%sVerificando se o nchecklist está configurado na cron !!!\n"
-
-echo "Verificando se o nchecklist está configurado na cron:" >> $REPORT
-echo "____________________________________________________" >> $REPORT
-    printf "\n" >> $REPORT
-
-       crontab -l |grep -i nchecklist >> $REPORT
-
-    printf "\n" >> $REPORT
-
-
-
-# 1.23 - Verificando se o script nchecklist se encontra no diretório
-
-
-
-printf "%sVerificando se o script nchecklist se encontra no diretório !!!\n"
-
-echo "Verificando se o script nchecklist se encontra no diretório:" >> $REPORT
-echo "____________________________________________________" >> $REPORT
-    printf "\n" >> $REPORT
-
-       ls -l /kyndryl/scripts |grep -i nchecklist >> $REPORT
-
-    printf "\n" >> $REPORT
-
-
-
 # 1.24 - Verificando se o motd está configurado no padrão
 
 
